@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="../src/styles.css">
+    <style>
+        @font-face {
+            font-family: 'Edu NSW ACT Hand Precursive';
+            src: url('../fonts/EduNSWACTHandPrecursive.woff2') format('woff2');
+        }
+    </style>
+</head>
+<body>
+    <div id="initial-screen" style="background-color: pink; height: 100vh; display: flex; justify-content: center; align-items: center;">
+        <button id="reveal-button">Kliknij we mnie</button>
+    </div>
+    <div id="content" style="display: none;">
+        <h1 style="font-family: 'Edu NSW ACT Hand Precursive'; text-align: center;">Happy Birthday!</h1>
+        <img src="images/main-picture.jpg" alt="Main Picture" style="display: block; margin: 0 auto;">
+        <p style="text-align: center; font-family: 'Edu NSW ACT Hand Precursive';">Wishing you a wonderful birthday filled with love and joy!</p>
+        
+        <div class="additional-pictures">
+            <div style="text-align: center;">
+                <img src="images/picture1.jpg" alt="Picture 1">
+                <p style="font-family: 'Edu NSW ACT Hand Precursive';">This is picture 1</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="images/picture2.jpg" alt="Picture 2">
+                <p style="font-family: 'Edu NSW ACT Hand Precursive';">This is picture 2</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="images/picture3.jpg" alt="Picture 3">
+                <p style="font-family: 'Edu NSW ACT Hand Precursive';">This is picture 3</p>
+            </div>
+            <div style="text-align: center;">
+                <img src="images/picture4.jpg" alt="Picture 4">
+                <p style="font-family: 'Edu NSW ACT Hand Precursive';">This is picture 4</p>
+            </div>
+        </div>
+
+        <div class="gifs" style="text-align: center;">
+            <img src="gifs/gif1.gif" alt="GIF 1">
+            <img src="gifs/gif2.gif" alt="GIF 2">
+            <img src="gifs/gif3.gif" alt="GIF 3">
+            <img src="gifs/gif4.gif" alt="GIF 4">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('reveal-button').onclick = function() {
+            document.getElementById('initial-screen').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        };
+    </script>
+</body>
+</html>
